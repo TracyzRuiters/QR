@@ -1,0 +1,362 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Global Styles */
+body {
+
+  color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header & Navigation */
+header {
+
+  background-color: black;
+  color: #fff;
+  padding: 20px 0;
+}
+
+
+#menu ul {
+  display: flex;
+  gap: 20px;
+}
+
+#menu ul li a {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#menu ul li a:hover {
+  background-image: url("https://img.freepik.com/premium-photo/blue-orange-background-with-blue-background-word-love-itgenerative-ai_391052-22629.jpg");
+}
+
+#responsive-menu {
+  display: none;
+}
+
+#menu .sub-menus {
+  display: none;
+  position: absolute;
+  background-image: url("https://img.freepik.com/premium-photo/blue-orange-background-with-blue-background-word-love-itgenerative-ai_391052-22629.jpg");
+   padding: 10px;
+  border-radius: 5px;
+  top: 50px;
+}
+
+#menu .sub-menus li a {
+  padding: 10px;
+}
+
+#menu li:hover .sub-menus {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  #menu ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  #menu ul li {
+    text-align: center;
+  }
+
+  #menu ul li a {
+    padding: 20px;
+  }
+
+  #responsive-menu:checked ~ ul {
+    display: flex;
+  }
+
+  #responsive-menu {
+    display: block;
+    background-image: url("https://img.freepik.com/premium-photo/blue-orange-background-with-blue-background-word-love-itgenerative-ai_391052-22629.jpg");
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+  }
+
+  #responsive-menu + label {
+ 
+    background-image: url("https://img.freepik.com/premium-photo/blue-orange-background-with-blue-background-word-love-itgenerative-ai_391052-22629.jpg");
+
+
+
+    width: 30px;
+    height: 30px; 
+    cursor: pointer;
+    display: block;
+  }
+
+  #responsive-menu + label:before {
+    content: "☰";
+    font-size: 30px;
+    color: white;
+    text-align: center;
+  }
+}
+
+/* Hero Section */
+#hero {
+  background-image: url("https://img.freepik.com/premium-photo/blue-orange-background-with-blue-background-word-love-itgenerative-ai_391052-22629.jpg");
+
+  
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+#hero .btn {
+  background-color: #ff4b5c;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+#hero .btn:hover {
+  background-color: #ff1d3c;
+}
+
+/* About Section */
+#about {
+  padding: 80px 20px;
+  background-image: url("https://img.freepik.com/premium-photo/blue-orange-background-with-blue-background-word-love-itgenerative-ai_391052-22629.jpg");
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Services Section */
+#services {
+  padding: 80px 20px;
+  background-color: #333;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.service-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service {
+  background-image: url("https://img.freepik.com/premium-photo/blue-orange-background-with-blue-background-word-love-itgenerative-ai_391052-22629.jpg");
+  padding: 30px;
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.service p {
+  font-size: 1.1rem;
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 80px 20px;
+background-color: #333;
+  text-align: center;
+}
+
+#pricing h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.pricing-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background-image: url("https://img.freepik.com/premium-photo/blue-orange-background-with-blue-background-word-love-itgenerative-ai_391052-22629.jpg");
+  width: 30%;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.pricing-card .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pricing-card .features {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.pricing-card .btn {
+  background-color: #2575fc;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-card .btn:hover {
+  background-color: #1e65c3;
+}
+
+/* Contact Section */
+.contact-us-section {
+  padding: 80px 20px;
+  background-image: url("https://img.freepik.com/premium-photo/blue-orange-background-with-blue-background-word-love-itgenerative-ai_391052-22629.jpg");
+
+  text-align: center;
+}
+
+.contact-us-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-us-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.contact-us-section form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: blue;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: blue;
+}
+
+/* Social Media Links */
+.social-media-links {
+  margin-top: 40px;
+}
+
+.social-media-links h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.social-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  border-radius: 25px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.social-btn:hover {
+  background-color: blue;
+}
+
+.whatsapp-btn i, .instagram-btn i, .facebook-btn i, .call-btn i, .email-btn i {
+  margin-right: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: red;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+}

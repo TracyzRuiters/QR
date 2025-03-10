@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Catz Computers</title>
+</head>
+<body>
+  <header>
+    <style>
+      body {
+          height: 2000px; /* Ensures there is enough scrollable space */
+      }
+      .logo {
+          position: fixed;
+          top: 50px;
+          left: 0;
+          width: 100px;
+          transition: transform 0.1s linear;
+      }
+  </style>
+</head>
+<body>
+
+  <img src="DALL·E 2025-02-05 11.55.22 - A modern and sleek logo design for a tech company named 'Catz Computers'. The logo features the initials 'CCZ' in a bold, stylized font. The 'C' and '.webp" alt="Logo" class="logo" id="logo">
+  
+  <script>
+      window.addEventListener("scroll", function() {
+          let scrollPosition = window.scrollY;
+          let logo = document.getElementById("logo");
+          logo.style.transform = `translateX(${scrollPosition}px)`;
+      });
+  </script>
+</body>
+</html>
+  
+ 
+
+  <section id="hero">
+    <div class="container">
+      <h2>Experience Luxury in the Digital World</h2>
+      <p>Struggling to get your business online? Our team can help with website design, social media management, or hosting needs. We've got your back on the web.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section id="about" class="fade-in">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>At Golden Elegance, we believe every digital experience should reflect your brand's identity. We are a passionate team of web developers, designers, and strategists committed to excellence.</p>
+    </div>
+  </section>
+
+  <section id="services" class="fade-in">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service">
+          <h3>Web Development</h3>
+          <p>We offer comprehensive web development services including UI/UX Design, E-commerce solutions, and SEO to ensure your digital presence stands out.</p>
+        </div>
+        <div class="service">
+          <h3>Brand Identity</h3>
+          <p>We create luxury brand experiences that stand out. We ensure that your business grows online and your digital world thrives.</p>
+        </div>
+        <div class="service">
+          <h3>Consulting</h3>
+          <p>We provide expert advice to refine your digital presence, with flexible options for in-person or online consultations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h1>Our Pricing Packages</h1>
+    <div class="pricing-container">
+      <div class="pricing-card">
+        <h3>Basic Package</h3>
+        <p class="price">R100</p>
+        <ul class="features">
+          <li>✔ 1 Website</li>
+          <li>✔ 5 Pages</li>
+          <li>✔ Basic SEO</li>
+        </ul>
+        <button class="btn">Choose Plan</button>
+      </div>
+      <div class="pricing-card">
+        <h3>Pro Package</h3>
+        <p class="price">R150</p>
+        <ul class="features">
+          
+          <li>✔ 1 Website</li>
+          <li>✔ 10 Pages</li>
+          <li>✔ Advanced SEO</li>
+          <li>✔ E-commerce Integration</li>
+        </ul>
+        <button class="btn">Choose Plan</button>
+      </div>
+      <div class="pricing-card">
+        <h3>Premium Package</h3>
+        <p class="price">R250</p>
+        <ul class="features">
+          <li>✔ Unlimited Pages</li>
+          <li>✔ Custom Design</li>
+          <li>✔ Full SEO Optimization</li>
+          <li>✔ Priority Support</li>
+        </ul>
+        <button class="btn">Choose Plan</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us-section" id="contact">
+    <h2>Get In Touch with CZ Computers</h2>
+    <p>We'd love to hear from you! Fill out the form or get in touch through the methods below.</p>
+
+    <form action="your-server-endpoint" method="POST">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <div class="social-media-links">
+      <h3>Contact Us via Social Media</h3>
+      <a href="https://wa.me/1234567890" target="_blank" class="social-btn whatsapp-btn">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://instagram.com/yourusername" target="_blank" class="social-btn instagram-btn">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://facebook.com/yourusername" target="_blank" class="social-btn facebook-btn">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+      <a href="tel:+0640448557" class="social-btn call-btn">
+        <i class="fas fa-phone"></i> Call Us Today
+      </a>
+      <a href="mailto:czcomputers@yahoo.com" class="social-btn email-btn">
+        <i class="fas fa-envelope"></i> Email Us
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 CZ COMPUTERS. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
